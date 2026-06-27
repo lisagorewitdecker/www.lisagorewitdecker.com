@@ -52,7 +52,7 @@
         slider.container = $(slider.containerSelector, slider);
         slider.count = slider.slides.length;
         // SYNC:
-        slider.syncExists = $(slider.vars.sync).length > 0;
+        slider.syncExists = $.find(slider.vars.sync).length > 0;
         // SLIDE:
         if (slider.vars.animation === "slide") slider.vars.animation = "swing";
         slider.prop = (vertical) ? "top" : "marginLeft";
