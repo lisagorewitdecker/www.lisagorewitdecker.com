@@ -1074,7 +1074,7 @@
       slider.update(pos, "remove");
 
       // update slider.slides
-      slider.slides = $(slider.vars.selector + ':not(.clone)', slider);
+      slider.slides = slider.find(slider.vars.selector + ':not(.clone)');
       // re-setup the slider to accomdate new slide
       slider.setup();
 
@@ -1165,8 +1165,12 @@
     if (typeof options === "object") {
       return this.each(function() {
         var $this = $(this),
-            selector = (options.selector) ? options.selector : ".slides > li",
-            $slides = $this.find(selector);
+            selectorOption = (typeof options.selector === "string") ? $.trim(options.selector) : "",
+            selector = (selectorOption && selectorOption.charAt(0) !== "<") ? selectorOption : ".slides > li",
+            $slides;
+
+        options.selector = selector;
+        $slides = $this.find(selector);
 
       if ( ( $slides.length === 1 && options.allowOneSlide === true ) || $slides.length === 0 ) {
           $slides.fadeIn(400);
