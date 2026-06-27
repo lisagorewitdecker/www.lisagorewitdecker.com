@@ -11,7 +11,7 @@
     // making variables public
     slider.vars = $.extend({}, $.flexslider.defaults, options);
 
-    var namespace = slider.vars.namespace,
+    var namespace = (slider.vars.namespace || "").replace(/[^A-Za-z0-9_-]/g, ""),
         msGesture = window.navigator && window.navigator.msPointerEnabled && window.MSGesture,
         touch = (( "ontouchstart" in window ) || msGesture || window.DocumentTouch && document instanceof DocumentTouch) && slider.vars.touch,
         // depricating this idea, as devices are being released with both of these events
@@ -20,6 +20,14 @@
         watchedEvent = "",
         watchedEventClearTimer,
         vertical = slider.vars.direction === "vertical",
+        reverse = slider.vars.reverse,
+        carousel = (slider.vars.itemWidth > 0),
+        fade = slider.vars.animation === "fade",
+        asNav = slider.vars.asNavFor !== "",
+        methods = {},
+        focused = true;
+
+    if (namespace === "") { namespace = "flex-"; }
         reverse = slider.vars.reverse,
         carousel = (slider.vars.itemWidth > 0),
         fade = slider.vars.animation === "fade",
