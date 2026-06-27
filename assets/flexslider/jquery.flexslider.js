@@ -692,7 +692,9 @@
 
       if (!slider.animating && (slider.canAdvance(target, fromNav) || override) && slider.is(":visible")) {
         if (asNav && withSync) {
-          var master = $(slider.vars.asNavFor).data('flexslider');
+          var masterEl = $.find(slider.vars.asNavFor)[0],
+              master = masterEl ? $(masterEl).data('flexslider') : null;
+          if (!master) { return false; }
           slider.atEnd = target === 0 || target === slider.count - 1;
           master.flexAnimate(target, true, false, true, fromNav);
           slider.direction = (slider.currentItem < target) ? "next" : "prev";
