@@ -71,8 +71,8 @@
         slider.animatingTo = slider.currentSlide;
         slider.atEnd = (slider.currentSlide === 0 || slider.currentSlide === slider.last);
         slider.containerSelector = slider.vars.selector.substr(0,slider.vars.selector.search(' '));
-        slider.slides = $( $.find(slider.vars.selector, slider) );
-        slider.container = $( $.find(slider.containerSelector, slider) );
+        slider.slides = $( $.find(slider.vars.selector, slider[0]) );
+        slider.container = $( $.find(slider.containerSelector, slider[0]) );
         slider.count = slider.slides.length;
         // SYNC:
         slider.syncExists = $.find(slider.vars.sync).length > 0;
