@@ -618,7 +618,7 @@
         }
       },
       sync: function(action) {
-        var syncTarget = (typeof slider.vars.sync === "string") ? $($.find(slider.vars.sync)) : $(slider.vars.sync),
+        var syncTarget = $( $.find(slider.vars.sync) ),
             $obj = syncTarget.data("flexslider"),
             target = slider.animatingTo;
 
