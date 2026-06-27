@@ -10,7 +10,20 @@
         selectorOption,
         asNavForOption,
         controlsContainerOption,
-        manualControlsOption;
+        manualControlsOption,
+        namespace,
+        msGesture,
+        touch,
+        eventType,
+        watchedEvent,
+        watchedEventClearTimer,
+        vertical,
+        reverse,
+        carousel,
+        fade,
+        asNav,
+        methods,
+        focused;
 
     // making variables public
     slider.vars = $.extend({}, $.flexslider.defaults, options);
@@ -28,21 +41,20 @@
     manualControlsOption = (typeof slider.vars.manualControls === "string") ? $.trim(slider.vars.manualControls) : "";
     slider.vars.manualControls = (manualControlsOption && manualControlsOption.charAt(0) !== "<") ? manualControlsOption : "";
 
-    var namespace = (slider.vars.namespace || "").replace(/[^A-Za-z0-9_-]/g, ""),
-        msGesture = window.navigator && window.navigator.msPointerEnabled && window.MSGesture,
-        touch = (( "ontouchstart" in window ) || msGesture || window.DocumentTouch && document instanceof DocumentTouch) && slider.vars.touch,
-        // depricating this idea, as devices are being released with both of these events
-        //eventType = (touch) ? "touchend" : "click",
-        eventType = "click touchend MSPointerUp keyup",
-        watchedEvent = "",
-        watchedEventClearTimer,
-        vertical = slider.vars.direction === "vertical",
-        reverse = slider.vars.reverse,
-        carousel = (slider.vars.itemWidth > 0),
-        fade = slider.vars.animation === "fade",
-        asNav = slider.vars.asNavFor !== "",
-        methods = {},
-        focused = true;
+    namespace = (slider.vars.namespace || "").replace(/[^A-Za-z0-9_-]/g, "");
+    msGesture = window.navigator && window.navigator.msPointerEnabled && window.MSGesture;
+    touch = (( "ontouchstart" in window ) || msGesture || window.DocumentTouch && document instanceof DocumentTouch) && slider.vars.touch;
+    // depricating this idea, as devices are being released with both of these events
+    //eventType = (touch) ? "touchend" : "click",
+    eventType = "click touchend MSPointerUp keyup";
+    watchedEvent = "";
+    vertical = slider.vars.direction === "vertical";
+    reverse = slider.vars.reverse;
+    carousel = (slider.vars.itemWidth > 0);
+    fade = slider.vars.animation === "fade";
+    asNav = slider.vars.asNavFor !== "";
+    methods = {};
+    focused = true;
 
     if (namespace === "") { namespace = "flex-"; }
 
