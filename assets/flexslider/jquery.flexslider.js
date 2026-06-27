@@ -6,10 +6,27 @@
 
   //FlexSlider: Object Instance
   $.flexslider = function(el, options) {
-    var slider = $(el);
+    var slider = $(el),
+        selectorOption,
+        asNavForOption,
+        controlsContainerOption,
+        manualControlsOption;
 
     // making variables public
     slider.vars = $.extend({}, $.flexslider.defaults, options);
+
+    // sanitize selector-like options to avoid HTML interpretation in jQuery calls
+    selectorOption = (typeof slider.vars.selector === "string") ? $.trim(slider.vars.selector) : "";
+    slider.vars.selector = (selectorOption && selectorOption.charAt(0) !== "<") ? selectorOption : ".slides > li";
+
+    asNavForOption = (typeof slider.vars.asNavFor === "string") ? $.trim(slider.vars.asNavFor) : "";
+    slider.vars.asNavFor = (asNavForOption && asNavForOption.charAt(0) !== "<") ? asNavForOption : "";
+
+    controlsContainerOption = (typeof slider.vars.controlsContainer === "string") ? $.trim(slider.vars.controlsContainer) : "";
+    slider.vars.controlsContainer = (controlsContainerOption && controlsContainerOption.charAt(0) !== "<") ? controlsContainerOption : "";
+
+    manualControlsOption = (typeof slider.vars.manualControls === "string") ? $.trim(slider.vars.manualControls) : "";
+    slider.vars.manualControls = (manualControlsOption && manualControlsOption.charAt(0) !== "<") ? manualControlsOption : "";
 
     var namespace = (slider.vars.namespace || "").replace(/[^A-Za-z0-9_-]/g, ""),
         msGesture = window.navigator && window.navigator.msPointerEnabled && window.MSGesture,
