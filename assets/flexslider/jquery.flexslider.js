@@ -224,11 +224,16 @@
                 var thumbSrc = slide.attr('data-thumb') || '',
                     safeThumbSrc = '';
 
-                // Accept only http(s), protocol-relative, and relative URLs.
-                // Prevent interpreting attacker-controlled DOM text as executable content.
-                if (/^(https?:\/\/|\/\/|\/|\.\/|\.\.\/|[^:]+$)/i.test(thumbSrc) && !/^\s*(javascript|data):/i.test(thumbSrc)) {
-                  safeThumbSrc = thumbSrc;
-                }
+                // Only allow http(s) URLs and same-origin relative URLs.
+                // Parse via URL API to avoid interpreting attacker-controlled text as executable content.
+                try {
+                  var parsedThumbUrl = new URL(thumbSrc, window.location.href);
+                  var isHttp = parsedThumbUrl.protocol === 'http:' || parsedThumbUrl.protocol === 'https:';
+                  var isRelative = !/^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(thumbSrc) && thumbSrc.indexOf('//') !== 0;
+                  if (isHttp && (isRelative || parsedThumbUrl.origin === window.location.origin)) {
+                    safeThumbSrc = parsedThumbUrl.href;
+                  }
+                } catch (e) {}
 
                 $li.append($('<img />').attr('src', safeThumbSrc));
               } else {
