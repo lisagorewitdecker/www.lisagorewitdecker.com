@@ -1174,9 +1174,9 @@
             asNavForOption = (typeof options.asNavFor === "string") ? $.trim(options.asNavFor) : "",
             asNavFor = (asNavForOption && asNavForOption.charAt(0) !== "<") ? asNavForOption : "",
             controlsContainerOption = (typeof options.controlsContainer === "string") ? $.trim(options.controlsContainer) : "",
-            controlsContainer = (controlsContainerOption && controlsContainerOption.charAt(0) !== "<") ? controlsContainerOption : "",
+            controlsContainer = (typeof options.controlsContainer === "string") ? ((controlsContainerOption && controlsContainerOption.charAt(0) !== "<") ? controlsContainerOption : "") : (options.controlsContainer == null ? "" : options.controlsContainer),
             manualControlsOption = (typeof options.manualControls === "string") ? $.trim(options.manualControls) : "",
-            manualControls = (manualControlsOption && manualControlsOption.charAt(0) !== "<") ? manualControlsOption : "",
+            manualControls = (typeof options.manualControls === "string") ? ((manualControlsOption && manualControlsOption.charAt(0) !== "<") ? manualControlsOption : "") : (options.manualControls == null ? "" : options.manualControls),
             $slides;
 
         options.selector = selector;
