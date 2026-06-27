@@ -1047,7 +1047,7 @@
       slider.update(pos, "add");
 
       // update slider.slides
-      slider.slides = $(slider.vars.selector + ':not(.clone)', slider);
+      slider.slides = $($.find(slider.vars.selector + ':not(.clone)', slider));
       // re-setup the slider to accomdate new slide
       slider.setup();
 
