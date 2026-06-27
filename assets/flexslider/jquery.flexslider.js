@@ -1173,10 +1173,16 @@
             selector = (selectorOption && selectorOption.charAt(0) !== "<") ? selectorOption : ".slides > li",
             asNavForOption = (typeof options.asNavFor === "string") ? $.trim(options.asNavFor) : "",
             asNavFor = (asNavForOption && asNavForOption.charAt(0) !== "<") ? asNavForOption : "",
+            controlsContainerOption = (typeof options.controlsContainer === "string") ? $.trim(options.controlsContainer) : "",
+            controlsContainer = (controlsContainerOption && controlsContainerOption.charAt(0) !== "<") ? controlsContainerOption : "",
+            manualControlsOption = (typeof options.manualControls === "string") ? $.trim(options.manualControls) : "",
+            manualControls = (manualControlsOption && manualControlsOption.charAt(0) !== "<") ? manualControlsOption : "",
             $slides;
 
         options.selector = selector;
         options.asNavFor = asNavFor;
+        options.controlsContainer = controlsContainer;
+        options.manualControls = manualControls;
         $slides = $this.find(selector);
 
       if ( ( $slides.length === 1 && options.allowOneSlide === true ) || $slides.length === 0 ) {
