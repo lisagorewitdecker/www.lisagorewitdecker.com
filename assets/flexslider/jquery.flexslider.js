@@ -1166,9 +1166,12 @@
         var $this = $(this),
             selectorOption = (typeof options.selector === "string") ? $.trim(options.selector) : "",
             selector = (selectorOption && selectorOption.charAt(0) !== "<") ? selectorOption : ".slides > li",
+            asNavForOption = (typeof options.asNavFor === "string") ? $.trim(options.asNavFor) : "",
+            asNavFor = (asNavForOption && asNavForOption.charAt(0) !== "<") ? asNavForOption : "",
             $slides;
 
         options.selector = selector;
+        options.asNavFor = asNavFor;
         $slides = $this.find(selector);
 
       if ( ( $slides.length === 1 && options.allowOneSlide === true ) || $slides.length === 0 ) {
