@@ -78,9 +78,15 @@
         }());
         slider.ensureAnimationEnd = '';
         // CONTROLSCONTAINER:
-        if (slider.vars.controlsContainer !== "") slider.controlsContainer = $(slider.vars.controlsContainer).length > 0 && $(slider.vars.controlsContainer);
+        var controlsContainerSelector = (typeof slider.vars.controlsContainer === "string") ? $.trim(slider.vars.controlsContainer) : "";
+        if (controlsContainerSelector !== "" && controlsContainerSelector.charAt(0) !== "<") {
+          slider.controlsContainer = $(controlsContainerSelector).length > 0 && $(controlsContainerSelector);
+        }
         // MANUAL:
-        if (slider.vars.manualControls !== "") slider.manualControls = $(slider.vars.manualControls).length > 0 && $(slider.vars.manualControls);
+        var manualControlsSelector = (typeof slider.vars.manualControls === "string") ? $.trim(slider.vars.manualControls) : "";
+        if (manualControlsSelector !== "" && manualControlsSelector.charAt(0) !== "<") {
+          slider.manualControls = $(manualControlsSelector).length > 0 && $(manualControlsSelector);
+        }
 
         // RANDOMIZE:
         if (slider.vars.randomize) {
