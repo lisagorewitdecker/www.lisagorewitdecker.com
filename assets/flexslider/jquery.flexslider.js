@@ -171,9 +171,12 @@
                 var posFromLeft = $slide.offset().left - $(slider).scrollLeft(); // Find position of slide relative to left of slider container
                 if( posFromLeft <= 0 && $slide.hasClass( namespace + 'active-slide' ) ) {
                   slider.flexAnimate(slider.getTarget("prev"), true);
-                } else if (!$(slider.vars.asNavFor).data('flexslider').animating && !$slide.hasClass(namespace + "active-slide")) {
-                  slider.direction = (slider.currentItem < target) ? "next" : "prev";
-                  slider.flexAnimate(target, slider.vars.pauseOnAction, false, true, true);
+                } else {
+                  var navTargetSlider = $($.find(slider.vars.asNavFor)).data('flexslider');
+                  if (navTargetSlider && !navTargetSlider.animating && !$slide.hasClass(namespace + "active-slide")) {
+                    slider.direction = (slider.currentItem < target) ? "next" : "prev";
+                    slider.flexAnimate(target, slider.vars.pauseOnAction, false, true, true);
+                  }
                 }
               });
           }else{
@@ -190,8 +193,9 @@
                   that.addEventListener("MSGestureTap", function (e){
                       e.preventDefault();
                       var $slide = $(this),
-                          target = $slide.index();
-                      if (!$(slider.vars.asNavFor).data('flexslider').animating && !$slide.hasClass('active')) {
+                          target = $slide.index(),
+                          navTargetSlider = $($.find(slider.vars.asNavFor)).data('flexslider');
+                      if (navTargetSlider && !navTargetSlider.animating && !$slide.hasClass('active')) {
                           slider.direction = (slider.currentItem < target) ? "next" : "prev";
                           slider.flexAnimate(target, slider.vars.pauseOnAction, false, true, true);
                       }
