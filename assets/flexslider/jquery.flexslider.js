@@ -301,7 +301,15 @@
       },
       directionNav: {
         setup: function() {
-          var directionNavScaffold = $('<ul class="' + namespace + 'direction-nav"><li><a class="' + namespace + 'prev" href="#">' + slider.vars.prevText + '</a></li><li><a class="' + namespace + 'next" href="#">' + slider.vars.nextText + '</a></li></ul>');
+          var directionNavScaffold = $('<ul>').addClass(namespace + 'direction-nav'),
+              prevItem = $('<li>'),
+              nextItem = $('<li>'),
+              prevLink = $('<a>').addClass(namespace + 'prev').attr('href', '#').text(slider.vars.prevText),
+              nextLink = $('<a>').addClass(namespace + 'next').attr('href', '#').text(slider.vars.nextText);
+
+          prevItem.append(prevLink);
+          nextItem.append(nextLink);
+          directionNavScaffold.append(prevItem).append(nextItem);
 
           // CONTROLSCONTAINER:
           if (slider.controlsContainer) {
