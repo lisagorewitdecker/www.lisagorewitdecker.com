@@ -106,7 +106,7 @@
         if (slider.vars.directionNav) methods.directionNav.setup();
 
         // KEYBOARD:
-        if (slider.vars.keyboard && ($(slider.containerSelector).length === 1 || slider.vars.multipleKeyboard)) {
+        if (slider.vars.keyboard && ($.find(slider.containerSelector).length === 1 || slider.vars.multipleKeyboard)) {
           $(document).bind('keyup', function(event) {
             var keycode = event.keyCode;
             if (!slider.animating && (keycode === 39 || keycode === 37)) {
