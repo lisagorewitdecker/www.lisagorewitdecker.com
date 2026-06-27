@@ -11,8 +11,8 @@ We provide security fixes for the code in the default branch only. This reposito
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+Please report security vulnerabilities via GitHub Security Advisories (Security tab → "Report a vulnerability").
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+We will acknowledge reports within 72 hours and provide status updates as we investigate.
+
+If you believe you have found a non-sensitive bug that does not pose a security risk, please open a standard GitHub issue instead.
