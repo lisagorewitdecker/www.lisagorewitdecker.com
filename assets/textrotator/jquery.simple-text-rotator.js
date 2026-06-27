@@ -140,10 +140,10 @@
             if (index + 1 == array.length) index = -1;
 
             el.html("");
-            $("<span class='front'></span>").text(initial).appendTo(el);
-            $("<span class='back'></span>")
-              .text(array[index + 1])
-              .appendTo(el);
+            $("<span>", { "class": "front" }).text(initial).appendTo(el);
+            $("<span>", { "class": "back" }).text(array[index + 1]).appendTo(
+              el
+            );
             el.wrapInner("<span class='rotating' />")
               .find(".rotating")
               .hide()
