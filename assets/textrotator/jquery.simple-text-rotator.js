@@ -56,10 +56,10 @@
             if (index + 1 == array.length) index = -1;
 
             el.html("");
-            $("<span class='front'>" + initial + "</span>").appendTo(el);
-            $("<span class='back'>" + array[index + 1] + "</span>").appendTo(
-              el
-            );
+            $("<span class='front'></span>").text(initial).appendTo(el);
+            $("<span class='back'></span>")
+              .text(array[index + 1])
+              .appendTo(el);
             el.wrapInner("<span class='rotating' />")
               .find(".rotating")
               .hide()
@@ -140,10 +140,10 @@
             if (index + 1 == array.length) index = -1;
 
             el.html("");
-            $("<span class='front'>" + initial + "</span>").appendTo(el);
-            $("<span class='back'>" + array[index + 1] + "</span>").appendTo(
-              el
-            );
+            $("<span class='front'></span>").text(initial).appendTo(el);
+            $("<span class='back'></span>")
+              .text(array[index + 1])
+              .appendTo(el);
             el.wrapInner("<span class='rotating' />")
               .find(".rotating")
               .hide()
