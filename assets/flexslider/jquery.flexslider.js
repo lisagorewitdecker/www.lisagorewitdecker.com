@@ -49,7 +49,7 @@
         slider.atEnd = (slider.currentSlide === 0 || slider.currentSlide === slider.last);
         slider.containerSelector = slider.vars.selector.substr(0,slider.vars.selector.search(' '));
         slider.slides = $(slider.vars.selector, slider);
-        slider.container = $(slider.containerSelector, slider);
+        slider.container = $( $.find(slider.containerSelector, slider) );
         slider.count = slider.slides.length;
         // SYNC:
         slider.syncExists = $.find(slider.vars.sync).length > 0;
