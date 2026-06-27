@@ -221,7 +221,16 @@
               slide = slider.slides.eq(i);
               var $li = $('<li></li>');
               if (slider.vars.controlNav === "thumbnails") {
-                $li.append($('<img />').attr('src', slide.attr('data-thumb')));
+                var thumbSrc = slide.attr('data-thumb') || '',
+                    safeThumbSrc = '';
+
+                // Accept only http(s), protocol-relative, and relative URLs.
+                // Prevent interpreting attacker-controlled DOM text as executable content.
+                if (/^(https?:\/\/|\/\/|\/|\.\/|\.\.\/|[^:]+$)/i.test(thumbSrc) && !/^\s*(javascript|data):/i.test(thumbSrc)) {
+                  safeThumbSrc = thumbSrc;
+                }
+
+                $li.append($('<img />').attr('src', safeThumbSrc));
               } else {
                 $li.append($('<a></a>').text(j));
               }
