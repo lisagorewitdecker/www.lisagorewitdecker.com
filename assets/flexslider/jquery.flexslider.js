@@ -52,7 +52,7 @@
         slider.container = $(slider.containerSelector, slider);
         slider.count = slider.slides.length;
         // SYNC:
-        slider.syncExists = $(slider.vars.sync).length > 0;
+        slider.syncExists = $.find(slider.vars.sync).length > 0;
         // SLIDE:
         if (slider.vars.animation === "slide") slider.vars.animation = "swing";
         slider.prop = (vertical) ? "top" : "marginLeft";
@@ -618,7 +618,8 @@
         }
       },
       sync: function(action) {
-        var $obj = $(slider.vars.sync).data("flexslider"),
+        var syncTarget = $( $.find(slider.vars.sync) ),
+            $obj = syncTarget.data("flexslider"),
             target = slider.animatingTo;
 
         switch (action) {
@@ -1047,7 +1048,7 @@
       slider.update(pos, "add");
 
       // update slider.slides
-      slider.slides = $(slider.vars.selector + ':not(.clone)', slider);
+      slider.slides = $($.find(slider.vars.selector + ':not(.clone)', slider[0]));
       // re-setup the slider to accomdate new slide
       slider.setup();
 
@@ -1073,7 +1074,7 @@
       slider.update(pos, "remove");
 
       // update slider.slides
-      slider.slides = $(slider.vars.selector + ':not(.clone)', slider);
+      slider.slides = slider.find(slider.vars.selector + ':not(.clone)');
       // re-setup the slider to accomdate new slide
       slider.setup();
 
@@ -1164,8 +1165,15 @@
     if (typeof options === "object") {
       return this.each(function() {
         var $this = $(this),
-            selector = (options.selector) ? options.selector : ".slides > li",
-            $slides = $this.find(selector);
+            selectorOption = (typeof options.selector === "string") ? $.trim(options.selector) : "",
+            selector = (selectorOption && selectorOption.charAt(0) !== "<") ? selectorOption : ".slides > li",
+            asNavForOption = (typeof options.asNavFor === "string") ? $.trim(options.asNavFor) : "",
+            asNavFor = (asNavForOption && asNavForOption.charAt(0) !== "<") ? asNavForOption : "",
+            $slides;
+
+        options.selector = selector;
+        options.asNavFor = asNavFor;
+        $slides = $this.find(selector);
 
       if ( ( $slides.length === 1 && options.allowOneSlide === true ) || $slides.length === 0 ) {
           $slides.fadeIn(400);
