@@ -45,12 +45,6 @@
         focused = true;
 
     if (namespace === "") { namespace = "flex-"; }
-        reverse = slider.vars.reverse,
-        carousel = (slider.vars.itemWidth > 0),
-        fade = slider.vars.animation === "fade",
-        asNav = slider.vars.asNavFor !== "",
-        methods = {},
-        focused = true;
 
     // Store a reference to the slider object
     $.data(el, "flexslider", slider);
