@@ -211,7 +211,6 @@
         setupPaging: function() {
           var type = (slider.vars.controlNav === "thumbnails") ? 'control-thumbs' : 'control-paging',
               j = 1,
-              item,
               slide;
 
           slider.controlNavScaffold = $('<ol class="'+ namespace + 'control-nav ' + namespace + type + '"></ol>');
@@ -219,12 +218,33 @@
           if (slider.pagingCount > 1) {
             for (var i = 0; i < slider.pagingCount; i++) {
               slide = slider.slides.eq(i);
-              item = (slider.vars.controlNav === "thumbnails") ? '<img src="' + slide.attr( 'data-thumb' ) + '"/>' : '<a>' + j + '</a>';
+              var $li = $('<li></li>');
+              if (slider.vars.controlNav === "thumbnails") {
+                var thumbSrc = slide.attr('data-thumb') || '',
+                    safeThumbSrc = '';
+
+                // Only allow http(s) URLs and same-origin relative URLs.
+                // Parse via URL API to avoid interpreting attacker-controlled text as executable content.
+                try {
+                  var parsedThumbUrl = new URL(thumbSrc, window.location.href);
+                  var isHttp = parsedThumbUrl.protocol === 'http:' || parsedThumbUrl.protocol === 'https:';
+                  var isRelative = !/^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(thumbSrc) && thumbSrc.indexOf('//') !== 0;
+                  if (isHttp && (isRelative || parsedThumbUrl.origin === window.location.origin)) {
+                    safeThumbSrc = parsedThumbUrl.href;
+                  }
+                } catch (e) {}
+
+                $li.append($('<img />').attr('src', safeThumbSrc));
+              } else {
+                $li.append($('<a></a>').text(j));
+              }
               if ( 'thumbnails' === slider.vars.controlNav && true === slider.vars.thumbCaptions ) {
                 var captn = slide.attr( 'data-thumbcaption' );
-                if ( '' != captn && undefined != captn ) item += '<span class="' + namespace + 'caption">' + captn + '</span>';
+                if ( '' != captn && undefined != captn ) {
+                  $li.append($('<span></span>').addClass(namespace + 'caption').text(captn));
+                }
               }
-              slider.controlNavScaffold.append('<li>' + item + '</li>');
+              slider.controlNavScaffold.append($li);
               j++;
             }
           }
