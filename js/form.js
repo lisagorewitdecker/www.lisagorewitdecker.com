@@ -3,6 +3,12 @@ $(function() {
     var $errorMessage = $("#error_message");
     var $errorDetails = $errorMessage.find(".error-details");
 
+    if (!$errorDetails.length) {
+      $errorDetails = $('<div class="error-details"></div>').appendTo(
+        $errorMessage
+      );
+    }
+
     if (data.result === "success") {
       $("form#reused_form").hide();
       $("#success_message").show();
