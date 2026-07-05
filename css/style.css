@@ -1725,6 +1725,11 @@ ul.slides li {
     -webkit-animation-delay: 1s;
 }
 
+.delay-5s {
+    animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
