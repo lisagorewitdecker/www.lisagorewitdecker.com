@@ -1,0 +1,4928 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Sacramento&display=swap");
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999999999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #fff url("../img/preloader.gif") no-repeat center center;
+}
+
+a {
+  color: #3b8e04;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  border-bottom: 0px dashed;
+  outline: none !important;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #0d0d0d;
+  text-decoration: none;
+  outline: none !important;
+}
+
+p {
+  color: #8c9398;
+  word-spacing: 1px;
+  line-height: 25px;
+  font-size: 14px;
+  padding: 15px;
+  font-family: "Open-Sans", sans-serif !important;
+}
+
+h2 {
+  font-size: 15px !important;
+  color: #4f4f4f !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2::after {
+  content: " ";
+  border: solid 1px #4f4f4f;
+  display: block;
+  width: 65px;
+  margin: 20px auto;
+}
+
+h2::before {
+  content: " ";
+  border: solid 1px #4f4f4f;
+  display: block;
+  width: 65px;
+  margin: 20px auto;
+}
+
+h6 {
+  font-size: 17px !important;
+  color: #4f4f4f;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 20px !important;
+  text-align: left;
+}
+
+h6::after {
+  content: " ";
+  border: solid 1px #4f4f4f;
+  display: block;
+  width: 65px;
+  margin-top: 20px;
+}
+
+
+h6.reviews {
+  text-align: left;
+  font-size: 1em !important;
+  margin: 0px auto !important;
+  line-height: 20px !important;
+  padding: 0px !important;
+  line-height: 18px !important;
+}
+
+h6.reviews::after {
+  content: " ";
+  border: solid 1px #cccccc;
+  display: block;
+  width: 80px;
+  margin-top: 20px;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+  width: 100% !important;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* Remove excess height in iOS 5 devices. */
+
+audio:not([controls]) {
+  display: none;
+  height: 0px;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html,
+html a {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+body {
+  margin: 0px auto !important;
+  font-family: "Open Sans", sans-serif !important;
+  width: 100% !important;
+}
+
+p.contact {
+  margin: 10px 15px !important;
+  font-size: 14px !important;
+}
+
+p.p-padding {
+  margin: 0px 20px !important;
+  font-size: 16px !important;
+}
+
+p.pleft {
+  text-align: left;
+  font-size: 16px !important;
+  margin: 0px auto !important;
+  line-height: 20px !important;
+  padding: 0px !important;
+  line-height: 18px !important;
+}
+
+p.pright {
+  text-align: right;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  margin: 0px auto !important;
+
+}
+
+p {
+  font-size: 16px !important;
+  text-align: center;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  color: #4f4f4f;
+}
+
+h2 {
+  font-size: 1.15em;
+}
+
+h3 {
+  font-size: 1.17em;
+  color: #545454 !important;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.83em;
+}
+
+h6 {
+  font-size: 17px;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 0em 55px;
+  border-left: 4px solid #cccccc;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+p,
+pre {
+  margin: 1em 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: none;
+}
+
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+small {
+  font-size: 75%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 28px !important;
+}
+
+span.green {
+  color: #3b8e03 !important;
+  text-transform: none !important;
+}
+
+span.yellow {
+  color: #ffe800 !important;
+  text-transform: none !important;
+}
+
+span.grey {
+  color: rgb(82, 82, 82) !important;
+  text-transform: none !important;
+}
+
+span.darkgray {
+  color: #545454 !important;
+  text-transform: uppercase !important;
+
+}
+
+#success_message {
+  text-align: center;
+}
+
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+.navbar-nav>li>a {
+  display: inline-block !important;
+  padding: 0rem !important;
+  padding-right: .5rem !important;
+  padding-left: .5rem !important;
+  line-height: 20px;
+  text-align: center !important;
+}
+
+.nav-link {
+  display: inline-block !important;
+  padding: 0rem !important;
+  padding-right: .5rem !important;
+  padding-left: .5rem !important;
+  text-align: center !important;
+}
+
+.navbar-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  text-align: center !important;
+}
+
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+section {
+  padding: 40px 0px !important;
+  max-width: 100% !important;
+}
+
+.section-padding {
+  padding: 40px 0px 40px 0px !important;
+}
+
+.hero-banner {
+  background: url(https://images.unsplash.com/photo-1517946264308-1a7ea8abb6e0?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=add9d7ca772d122fb699bb1790d89a93) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-banner:after {
+  content: "";
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding: 20px;
+}
+
+.hero-banner h2 {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.about {
+  text-align: center;
+  line-height: 2;
+}
+
+.portfolio {
+  text-align: center;
+  line-height: 2;
+  background: #f1f1f1;
+}
+
+header {
+  padding: 20px 0px 0px 0px !important;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+form {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.col-md-offset-1 {
+  width: 100% !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  text-align: center !important;
+}
+
+.section-padding {
+  padding: 40px 0px 40px 0px !important;
+}
+
+section {
+  padding: 40px 0px 40px 0px !important;
+}
+
+.dark-bg {
+  background: #f3f5f8;
+}
+
+.light-bg {
+  background-color: #fff;
+}
+
+.dark-box {
+  background: #f3f5f8;
+  -webkit-box-shadow: 0px 3px 0px 0px #3b8e04;
+  -moz-box-shadow: 0px 3px 0px 0px #3b8e04;
+  box-shadow: 0px 3px 0px 0px #3b8e04;
+  padding: 20px 0;
+}
+
+.dark-box:hover,
+.dark-box:focus {
+  -webkit-box-shadow: 0px 3px 0px 0px #ffe801;
+  -moz-box-shadow: 0px 3px 0px 0px #ffe801;
+  box-shadow: 0px 3px 0px 0px #ffe801;
+}
+
+.box-hover {
+  transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+
+.box-hover:hover,
+.box-hover:focus {
+  transform: translate(0, -15px);
+  -webkit-transform: translate(0, -15px);
+  -ms-transform: translate(0, -15px);
+}
+
+.wrapper {
+  height: 650px;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+.inner {
+  padding-top: 138px;
+}
+
+.menu-wrap a {
+  color: #555d7c;
+  outline: none !important;
+}
+
+.menu-wrap a:hover,
+.menu-wrap a:focus {
+  color: #3b8e04;
+}
+
+.content-wrap {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.content {
+  position: relative;
+  background: #b4bad2;
+  padding-bottom: 12em;
+}
+
+/* Common styles for menu button and menu-wrap */
+
+.menu-button,
+.menu-wrap {
+  position: fixed;
+  width: 2.5em;
+  height: 2.25em;
+  font-size: 1.5em;
+  -webkit-transform: translate3d(1.5em, 1.5em, 0);
+  transform: translate3d(1.5em, 1.5em, 0);
+}
+
+.row {
+  display: -ms-flexbox;
+  display: inline-block;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+div.row.color-bg {
+  max-width: 100% !important;
+  display: block !important;
+}
+
+div.col-md-6.nopadding {
+  display: inline-block !important;
+  width: 50% !important;
+  height: auto;
+}
+
+/* Menu Button */
+
+.menu-button {
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-indent: 2.5em;
+  color: transparent;
+  background: transparent;
+}
+
+.menu-button::before {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  bottom: 0.5em;
+  left: 0.5em;
+  background: linear-gradient(#3b8e04 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 40%, #3b8e04 40%, #3b8e04 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 80%, #3b8e04 80%);
+  content: "";
+}
+
+.menu-button:hover {
+  opacity: 0.6;
+}
+
+/* Menu */
+
+.menu-wrap {
+  z-index: 999;
+  background: rgba(255, 255, 255, 1);
+  -webkit-transition: width 0.4s, height 0.4s, -webkit-transform 0.4s;
+  transition: width 0.4s, height 0.4s, transform 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.menu-button {
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-indent: 2.5em;
+  color: transparent;
+  background: rgba(255, 255, 255, 1);
+}
+
+.menu {
+  height: 100%;
+  overflow: hidden;
+  font-size: 0.75em;
+  background-color: rgb(200, 200, 200);
+}
+
+.container {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero {
+  background: url(../img/header-bg.jpg) center center no-repeat;
+  background-size: cover;
+  padding: 200px 0px 100px 0px !;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+.hero h1 {
+  font-size: 140px;
+  margin: 80px 0px 8px 0px;
+  font-weight: 400;
+  line-height: 148px;
+  font-family: "Sacramento", cursive;
+  color: #3b8e04;
+  text-shadow: 3px 2px 3px #31323293;
+
+}
+
+h1.animated.fadeInnDown {
+  line-height: 20em;
+  font-family: "Sacramento", cursive !important;
+}
+
+.hero h1 span {
+  color: #a1a9b0;
+}
+
+.hero h3 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0px 10px;
+  opacity: 68;
+  color: #545454 !important;
+  font-weight: 600;
+  text-shadow: 3px 2px 3px #31323293;
+  letter-spacing: 14px;
+  line-height: 68px;
+  text-transform: uppercase !important;
+  text-align: center;
+
+}
+
+.hero p {
+  letter-spacing: 1px;
+  color: #4f4f4f;
+  font-size: 22px;
+}
+
+p.about {
+  letter-spacing: 1px;
+  color: #4f4f4f;
+  font-size: 20px !important;
+}
+
+/* Arrow Animation */
+
+@keyframes arrowbounce {
+  from {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  to {
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+@-moz-keyframes arrowbounce {
+
+  /* Firefox */
+  from {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  to {
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+@-webkit-keyframes arrowbounce {
+
+  /* Safari and Chrome */
+  from {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  to {
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+@-o-keyframes arrowbounce {
+
+  /* Opera */
+  from {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  to {
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+.scrollto {
+  padding: 150px 0px 0px 0px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  width: 200px;
+  margin: 0 auto;
+  border-bottom: none;
+}
+
+.scrollto--arrow {
+  padding: 10px;
+}
+
+.scrollto--arrow img {
+  animation: arrowbounce 1s alternate infinite;
+  -moz-animation: arrowbounce 1s alternate infinite;
+  /* Firefox */
+  -webkit-animation: arrowbounce 1s alternate infinite;
+  /* Safari and Chrome */
+  -o-animation: arrowbounce 1s alternate infinite;
+  /* Opera */
+}
+
+.menu {
+  height: 100%;
+  width: 100% !important;
+  overflow: hidden !important;
+  font-size: 0.75em;
+  background-color: rgb(200, 200, 200);
+}
+
+.intro p {
+  margin: 50px 0 0;
+}
+
+h1.arrow {
+  font-size: 72px;
+  font-family: "Sacramento", cursive !important;
+  letter-spacing: -0.002em;
+  color: #4f4f4f;
+  background: url(../img/h1-bg.png) no-repeat center bottom;
+  font-weight: 400;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 15px;
+  text-transform: lowercase !important;
+  float: none;
+  text-align: center;
+}
+
+h1.arrowtwo {
+  font-size: 28px;
+  font-family: "Open Sans", sans-serif !important;
+  letter-spacing: -0.002em;
+  color: #4f4f4f;
+  background: url(../img/h1-bg.png) no-repeat center bottom;
+  font-weight: 400;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 15px;
+  text-transform: uppercase;
+  float: none;
+  text-align: center;
+}
+
+h1.arrowthree {
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif !important;
+  letter-spacing: -0.002em;
+  color: #4f4f4f;
+  font-weight: 400;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 15px;
+  float: none;
+  text-align: center;
+}
+
+h1.arrow span {
+  color: #3b8e04;
+}
+
+h1.noarrow {
+  font-size: 16px;
+  color: #fff !important;
+  letter-spacing: 4px;
+  background: none !important;
+  font-weight: bold;
+}
+
+.color-bg,
+h1.noarrow {
+  color: #4f4f4f !important;
+}
+
+h1.noarrow::after {
+  content: " ";
+  border: none !important;
+  display: block;
+  margin: 20px auto;
+}
+
+h2.arrow {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff !important;
+  letter-spacing: 4px;
+  background: none !important;
+  font-weight: bold;
+}
+
+.color-bg h2.arrow {
+  color: #fff !important;
+}
+
+h2.arrow::after {
+  content: " ";
+  border: none !important;
+  display: block;
+  margin: 20px auto;
+}
+
+.btn btn-primary,
+.btn btn-success {
+  background: #3b8e04;
+  color: white;
+  transition: all 0.4s;
+  border-radius: 12px;
+  float: none !important;
+}
+
+.row-social {
+  display: inline-block;
+  margin: 0px auto;
+}
+
+div.row.icons {
+  padding: 4%;
+  display: inline-block;
+  margin: 0px auto;
+}
+
+.about-image {
+  height: 400px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.color-bg {
+  background: #3b8e04;
+  margin: 0px auto;
+  max-width: 100%;
+}
+
+.color-bg a {
+  color: #ffe800;
+}
+
+.color-bg h6,
+.color-bg p {
+  color: white;
+}
+
+.color-bg h6::after {
+  border-color: #fff;
+  margin: 15px 15px !important;
+}
+
+.color-bg .weight-outline-btn {
+  color: white;
+  border-color: white;
+}
+
+.color-bg .weight-outline-btn:hover {
+  background: #fff;
+  color: #3b8e04;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.about-text {
+  padding: 20px 50px 25px 50px;
+}
+
+.about-text h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #8c8c8c;
+}
+
+.color-bg h1.arrow span {
+  color: #ffe800;
+}
+
+.color-bg h1.arrow {
+  color: #fff;
+}
+
+.services {
+  margin-top: 20px 0px;
+  display: inline-block;
+  width: 100%;
+  float: none;
+  vertical-align: middle;
+}
+
+.services .icon {
+  width: 200px;
+  height: 200px;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 188px;
+  color: #ffe800;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  /* margin-bottom: 40px; */
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border: 4px solid rgb(82, 82, 82);
+  color: rgb(82, 82, 82);
+  background: rgb(82, 82, 82);
+}
+
+.services .item:hover .icon {
+  background: #ffe800;
+  border: 4px solid #ffe800;
+}
+
+.services .item [class*="fa"] {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.services .item:hover [class*="fa"] {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  color: #fff;
+}
+
+.features-wrapper {
+  margin: 70px 0 0;
+}
+
+i.response {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  margin: 0 auto;
+  line-height: 35px;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border: 1px solid #cccccc;
+  color: #cccccc;
+}
+
+.iphone {
+  width: 50%;
+  background: #f3f5f8;
+  float: left;
+  height: 100%;
+  box-shadow: inset -15px -11px 40px -6px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset -15px -11px 40px -6px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset -15px -11px 40px -6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.fluid-white {
+  width: 50%;
+  background: #fff;
+  float: right;
+  height: 100%;
+  z-index: 2;
+}
+
+.responsive-services {
+  position: relative;
+}
+
+.swag h1 span {
+  display: inline-block !important;
+  font-size: inherit !important;
+  margin-top: 20px !important;
+}
+
+.swag {
+  padding: 75px 0;
+}
+
+.swag h1 {
+  text-transform: none;
+  letter-spacing: -0.002em;
+  color: #4f4f4f;
+}
+
+.swag h1 span {
+  display: block;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.down-arrow-btn {
+  width: auto;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  margin: 15px 5px 15px 5px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 0px 10px;
+  text-align: center;
+}
+
+.down-arrow-btn:hover,
+.down-arrow-btn:focus {
+  color: #fff;
+  background: rgba(0, 0, 0, 1);
+}
+
+.portfolio img {
+  height: 300px;
+  width: 100%;
+}
+
+img.grayscale {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 3.5+,IE10 */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+& Safari 6+*/
+  /* -webkit-transition: all 0.6s ease; */
+  /* Fade to color for Chrome and Safari */
+  /* -webkit-backface-visibility: hidden; */
+  /* Fix for transition flickering */
+}
+
+img.grayscale:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+.row-offset-0 {
+  margin: 0px auto !important;
+  padding: 0px !important;
+  max-width: 100% !important;
+}
+
+.container-fluid {
+  max-width: 100% !important;
+  margin-right: 0px auto !important;
+  margin-left: 0px auto !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.container {
+  max-width: 100% !important;
+  margin-right: 0px auto !important;
+  margin-left: 0px auto !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+div.container-fluid {
+  max-width: 100% !important;
+  margin-right: 0px auto !important;
+  margin-left: 0px auto !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+div.container {
+  max-width: 100% !important;
+  margin-right: 0px auto !important;
+  margin-left: 0px auto !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.row-offset-0 {
+  margin: 0px auto !important;
+  padding: 0px !important;
+  max-width: 100% !important;
+}
+
+ul.navbar-nav.ml-auto {
+  padding: 0px auto;
+  margin: 0px auto;
+  text-align: right;
+  max-width: 100%;
+}
+
+.effects {
+  padding-left: 15px;
+}
+
+.effects .img {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.effects .img:nth-child(n) {
+  margin-right: 5px;
+}
+
+.effects .img:first-child {
+  margin-left: -15px;
+}
+
+.effects .img:last-child {
+  margin-right: 0;
+}
+
+.effects .img img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  z-index: 20;
+  filter: none !important;
+  -webkit-filter: grayscale(0%);
+  overflow: hidden;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.overlay-effect .img i {
+  font-size: 30px;
+}
+
+.overlay-effect .overlay {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.overlay-effect .overlay a.expand {
+  left: 0;
+  right: 0;
+  bottom: 47%;
+  margin: 0 auto -30px auto;
+}
+
+.overlay-effect .img.hover .overlay {
+  height: 100%;
+  opacity: 1;
+}
+
+.img img {
+  width: -webkit-calc(100%+40px) !important;
+  width: calc(100%+40px) !important;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -moz-transition: opacity 0.35s, -moz-transform 0.35s;
+  -o-transition: opacity 0.35s, -o-transform 0.35s;
+  -webkit-transform: translate3d(-40px, 0, 0);
+  transform: translate3d(-40px, 0, 0);
+  -ms-transform: translate3d(-40px, 0, 0);
+}
+
+.img:hover img {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(-40px, 0, 0);
+}
+
+.hype {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50px;
+}
+
+.spacer-cta {
+  background-color: #3b8e04;
+  padding: 70px 0;
+}
+
+.outline-btn {
+  display: inline-block;
+  padding: 25px 40px;
+  color: #ffe801;
+  border: solid 1px #ffe801;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.outline-btn:hover,
+.outline-btn:focus {
+  color: #3b8e04;
+  border: solid 1px #3b8e04;
+  background: #ffe801;
+}
+
+.weight-outline-btn {
+  display: inline-block;
+  padding: 20px 30px;
+  color: #8c8c8c;
+  border: solid 1px #8c8c8c;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.weight-outline-btn:hover,
+.outline-btn:focus {
+  color: #424242;
+  border: solid 1px #424242;
+}
+
+.outline-btntwo {
+  display: inline-block;
+  padding: 25px 40px;
+  color: #ffe801;
+  border: solid 1px #ffe801;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.outline-btntwo:hover,
+.outline-btntwo:focus {
+  color: #3b8e04;
+  border: solid 1px #3b8e04;
+  background: #ffe801;
+}
+
+.weight-outline-btntwo {
+  display: inline-block;
+  padding: 20px 30px;
+  color: #8c8c8c;
+  border: solid 1px #8c8c8c;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.weight-outline-btntwo:hover,
+.outline-btntwo:focus {
+  color: #424242;
+  border: solid 1px #424242;
+}
+
+.team img {
+  margin-bottom: 20px;
+}
+
+ul.social-buttons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.social-buttons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+ul.social-buttons li:last-child {
+  margin-right: 0;
+}
+
+.social-btn {
+  width: 40px;
+  height: 40px;
+  background: #3b8e04;
+  display: inline-block;
+  color: #fff;
+  font-size: 17px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.social-btn:hover,
+.social-btn:focus {
+  background: rgba(255, 232, 0, 1);
+  color: #3b8e04;
+}
+
+.social {
+  margin-top: 25px;
+}
+
+.up-btn {
+  width: 55px;
+  height: 55px;
+  background: rgba(255, 232, 1, 0.9);
+  display: block;
+  margin: 0 auto;
+  color: #3b8e04;
+  font-size: 18px;
+  line-height: 52px;
+  text-align: center;
+  position: absolute;
+  top: -26px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.up-btn:hover,
+up-btn:focus {
+  color: black;
+  background: #ffe800;
+}
+
+.up-btn2 {
+  width: 55px;
+  height: 55px;
+  background: rgba(255, 232, 1, 0.9);
+  display: block;
+  margin: 0 auto;
+  color: #3b8e04;
+  font-size: 18px;
+  line-height: 52px;
+  text-align: center;
+  top: 0px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.up-btn2:hover,
+up-btn2:focus {
+  color: black;
+  background: #ffe800;
+}
+
+.contact-details {
+  margin: 70px 0;
+}
+
+.contact-details h2 {
+  font-size: 20px;
+}
+
+.contact-details h2 span {
+  display: block;
+  color: #545454;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.contact-wrap {
+  position: relative;
+}
+
+.resume-wrap {
+  position: relative;
+}
+
+.portfolio-wrap {
+  position: relative;
+}
+
+i.fa.fa-map-marker {
+  text-align: center;
+  display: block;
+  margin: 0px auto;
+}
+
+.fa.fa-mobile {
+  text-align: center;
+  display: block;
+  margin: 0px auto;
+}
+
+.fa.fa-paper-plane {
+  text-align: center;
+  display: block;
+  margin: 0px auto;
+}
+
+ul.footer-menu {
+  display: block;
+  margin: 0px auto;
+  max-width: 100%;
+  padding: 0px !important;
+
+
+}
+
+.footer-menu a.nav-link {
+  color: slategray
+}
+
+.footer-menu a.nav-link:hover {
+  color: green
+}
+
+
+#copyright {
+  text-align: center !important;
+  display: block !important;
+  margin: 0px auto !important;
+}
+
+div.form-container {
+  display: inline-block;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  clear: both;
+}
+
+#googleform {
+  padding: 0% 0 5% 0 !important;
+  background: transparent !important;
+  border: 0px solid transparent !important;
+  min-width: 100%;
+  height: 602px;
+  margin: 0px auto;
+  display: block;
+}
+
+#googlemaps {
+  padding: 0% 0 5% 0 !important;
+  background: transparent !important;
+  border: 0px solid transparent !important;
+  min-width: 100%;
+  height: 375px;
+  margin: 0px auto;
+
+}
+
+#copyright {
+  color: slategray;
+}
+
+#contact {
+  padding: 0% 0 5% 0 !important;
+  background: transparent !important;
+  border: 0px solid transparent !important;
+  margin: 0px auto;
+  width: 100%;
+  padding: 0px;
+  text-align: left !important;
+}
+
+#contacts {
+  padding: 0px auto !important;
+  background: transparent !important;
+  border: 9px solid transparent !important;
+  margin: -40px 0px 40px 0px !important;
+  max-width: 100%;
+  text-align: left;
+}
+
+.contact label {
+  float: left;
+}
+
+label {
+  text-align: left !important;
+  font-weight: normal !important;
+}
+
+.contact .form-control {
+  margin-bottom: 20px;
+  border: 1px solid #cbcbcb;
+  height: 45px;
+}
+
+.contact textarea.form-control {
+  height: 310px;
+}
+
+.contact .form-control {
+  border-radius: 0 !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.contact .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #b0b0b0;
+}
+
+.btn-send {
+  background: #3b8e04;
+  color: white;
+  transition: all 0.4s;
+  border-radius: 0;
+  float: right;
+}
+
+.btn-send:hover {
+  background: #ffe800;
+  color: #3b8e04;
+}
+
+button,
+button:focus,
+button:hover,
+button:active {
+  outline: none !important;
+}
+
+.form-container {
+  padding: 0% !important;
+  background: #ffffff;
+  width: 100%;
+  margin: 0px auto;
+}
+
+footer a {
+  color: #a1a9b0;
+}
+
+footer {
+  background-color: #f3f5f8;
+  padding: 40px 0 30px;
+}
+
+footer p {
+  color: #808080;
+}
+
+#servicesSlider {
+  margin-top: 70px;
+}
+
+ul.slides li {
+  margin-bottom: 20px;
+}
+
+.features-slider {
+  position: relative;
+  padding: 11% 100px 10% 100px;
+  height: 400px;
+  background-color: #3f6184;
+}
+
+.features-slider ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features-slider ul li {
+  width: 100%;
+}
+
+.features-slider li h1 {
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.features-slider li p {
+  color: #fff;
+  font-size: 14px;
+  padding: 15px;
+}
+
+#clientSlider .flex-control-nav {
+  text-align: center;
+  margin: 0px auto !important;
+}
+
+#clientSlider .flex-control-nav li:first-child {
+  margin: 0px 4px 0px 0px;
+}
+
+#clientSlider small {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.flex-control-paging li a.flex-active {
+  background: #3b8e04;
+  border-color: #3b8e04;
+}
+
+.color-bg .flex-control-paging li a {
+  background: white;
+  border-color: white;
+}
+
+.color-bg .flex-control-paging li a.flex-active {
+  background: #ffe800;
+  border-color: #ffe800;
+}
+
+.wp1,
+.wp2,
+.wp3,
+.wp4,
+.wp5,
+.wp6 {
+  visibility: hidden;
+}
+
+.bounceInLeft,
+.bounceInRight,
+.fadeInUp,
+.fadeInUpDelay,
+.fadeInDown,
+.fadeInUpD,
+.fadeInLeft,
+.fadeInRight {
+  visibility: visible;
+}
+
+.delay-05s {
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+
+.delay-1s {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+
+.wp3 {
+  background: url("../img/iphone-bg.png") no-repeat center center;
+  background-position: 200px 10px;
+  height: 100%;
+}
+
+.col-md-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+div.col-md-4.wp2.item {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  margin: 0px auto;
+}
+
+/* iPhone X in portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-6.nopadding {
+    display: block !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  .col-3,
+  .col-6 {
+    padding: 0px !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+
+  h1.animated.fadeInnDown {
+    line-height: 4em;
+    font-family: "Sacramento", cursive !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* iPhone X in landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-6.nopadding {
+    display: block !important;
+    width: 100% !important;
+    padding: 0px !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+
+  h1.animated.fadeInnDown {
+    line-height: 4em;
+    font-family: "Sacramento", cursive !important;
+  }
+}
+
+/* iPhone X in portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+
+  h1.animated.fadeInnDown {
+    line-height: 4em !important;
+    font-family: "Sacramento", cursive !important;
+  }
+}
+
+/* iPhone 6, 7, & 8 in portrait & landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .col-md-6 .nopadding {
+    display: block !important;
+  }
+}
+
+.container-fluid {
+  max-width: 100% !important;
+  margin-right: 0px auto !important;
+  margin-left: 0px auto !important;
+  padding: 0px !important;
+}
+
+.container {
+  max-width: 100% !important;
+  margin-right: 0px auto !important;
+  margin-left: 0px auto !important;
+  padding: 0px !important;
+}
+
+div.container-fluid {
+  max-width: 100% !important;
+  margin-right: 0px auto !important;
+  margin-left: 0px auto !important;
+  padding: 0px !important;
+}
+
+div.container {
+  max-width: 100% !important;
+  margin-right: 0px auto !important;
+  margin-left: 0px auto !important;
+  padding: 0px !important;
+}
+
+div.col-md-12 {
+  margin-right: 0px auto !important;
+  padding: 0px !important;
+}
+
+.rc-anchor-normal {
+  height: 74px;
+  width: 150px;
+  display: block !important;
+  margin: 0px auto !important;
+}
+
+.col-md-12 {
+  max-width: 100% !important;
+  padding: 0px !important;
+}
+
+.col-md-6 {
+  max-width: 100% !important;
+  padding: 0px !important;
+}
+
+h1.animated.fadeInnDown {
+  line-height: 4em !important;
+  font-family: "Sacramento", cursive !important;
+}
+
+
+/* iPhone 6, 7, & 8 in landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+  .col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    padding: 0px auto !important;
+    width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+    padding: 0px !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+    padding: 0px !important;
+  }
+
+  h1.animated.fadeInnDown {
+    line-height: 4em !important;
+    font-family: "Sacramento", cursive !important;
+  }
+
+}
+
+/* iPhone 6, 7, & 8 in portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .col-md-4 {
+    padding: 0px auto !important;
+    width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+
+    padding: 0px !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+    padding: 0px !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+    padding: 0px !important;
+  }
+}
+
+/* iPhone 6, 7, & 8 Plus in portrait & landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+    padding: 0px !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+    padding: 0px !important;
+  }
+
+  div.row {
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.dark-box.box-hover {
+    width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.col-md-4 {
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.col-md-4.wp2.item {
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+    padding: 0px !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+}
+
+/* iPhone 6, 7, & 8 Plus in landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.row {
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.dark-box.box-hover {
+    min-width: 100% !important;
+    display: inline-block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4 {
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+}
+
+/* iPhone 6, 7, & 8 Plus in portrait */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .contact-details h2 {
+    font-size: 16px !important;
+  }
+
+  div.row {
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.dark-box.box-hover {
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  /* .rc-anchor-normal {
+		height: 74px;
+		width: 150px;
+		display: block !important;
+		margin: 0px auto !important;
+	} */
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+
+  /* .navbar {
+		border-radius: 0px !important;
+	}
+	.navbar-nav {
+		float: none !important;
+		margin: 0px auto !important;
+		max-width: 100% !important;
+	} */
+}
+
+/* iPhone 5 & 5S in portrait & landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .contact-details h2 {
+    font-size: 16px !important;
+  }
+
+  div.col-md-4 {
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  /* .rc-anchor-normal {
+		height: 74px;
+		width: 150px;
+		display: block !important;
+		margin: 0px auto !important;
+	} */
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+
+  /* .navbar {
+		border-radius: 0px !important;
+	}
+	.navbar-nav {
+		float: none !important;
+		margin: 0px auto !important;
+		max-width: 100% !important;
+	} */
+}
+
+/* iPhone 5 & 5S in landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .contact-details h2 {
+    font-size: 16px !important;
+  }
+
+  div.col-md-4 {
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  /* .rc-anchor-normal {
+		height: 74px;
+		width: 150px;
+		display: block !important;
+		margin: 0px auto !important;
+	} */
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+
+  /* .navbar {
+		border-radius: 0px !important;
+	}
+	.navbar-nav {
+		float: none !important;
+		margin: 0px auto !important;
+		max-width: 100% !important;
+	} */
+}
+
+/* iPhone 5 & 5S in portrait */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .contact-details h2 {
+    font-size: 16px !important;
+  }
+
+  div.col-md-4 {
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  /* .rc-anchor-normal {
+		height: 74px;
+		width: 150px;
+		display: block !important;
+		margin: 0px auto !important;
+	} */
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+
+  /* .navbar {
+		border-radius: 0px !important;
+	}
+	.navbar-nav {
+		float: none !important;
+		margin: 0px auto !important;
+		max-width: 100% !important;
+	} */
+}
+
+/* iPhone 2G-4S in portrait & landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .contact-details h2 {
+    font-size: 16px !important;
+  }
+
+  div.col-md-4 {
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  /* .rc-anchor-normal {
+		height: 74px;
+		width: 150px;
+		display: block !important;
+		margin: 0px auto !important;
+	} */
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+
+  /* .navbar {
+		border-radius: 0px !important;
+	}
+	.navbar-nav {
+		float: none !important;
+		margin: 0px auto !important;
+		max-width: 100% !important;
+	} */
+}
+
+/* iPhone 2G-4S in landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .contact-details h2 {
+    font-size: 16px !important;
+  }
+
+  div.col-md-4 {
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  /* .rc-anchor-normal {
+		height: 74px;
+		width: 150px;
+		display: block !important;
+		margin: 0px auto !important;
+	} */
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+
+  /* .navbar {
+		border-radius: 0px !important;
+	}
+	.navbar-nav {
+		float: none !important;
+		margin: 0px auto !important;
+		max-width: 100% !important;
+	} */
+}
+
+/* iPhone 2G-4S in portrait */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .contact-details h2 {
+    font-size: 16px !important;
+  }
+
+  div.col-md-4 {
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+}
+
+/* iPad in portrait & landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.col-md-4.nopadding {
+    display: block !important;
+    margin: 6px 0px 6px 0px !important;
+    padding: 6px 0px 6px 0px !important;
+    text-align: center;
+    max-width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .contact-details h2 {
+    font-size: 16px !important;
+  }
+
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+}
+
+/* iPad in landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.col-md-4.nopadding {
+    display: block !important;
+    margin: 6px 0px 6px 0px !important;
+    padding: 6px 0px 6px 0px !important;
+    text-align: center;
+    max-width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .contact-details h2 {
+    font-size: 16px !important;
+  }
+
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+}
+
+/* iPad in portrait */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.col-md-4.nopadding {
+    display: block !important;
+    margin: 6px 0px 6px 0px !important;
+    padding: 6px 0px 6px 0px !important;
+    text-align: center;
+    max-width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .contact-details h2 {
+    font-size: 16px !important;
+  }
+
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+}
+
+/* iPad mini in portrait & landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.col-md-4.nopadding {
+    display: block !important;
+    margin: 6px 0px 6px 0px !important;
+    padding: 6px 0px 6px 0px !important;
+    text-align: center;
+    max-width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .contact-details h2 {
+    font-size: 16px !important;
+  }
+
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+}
+
+/* iPad mini in landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.col-md-4.nopadding {
+    display: block !important;
+    margin: 6px 0px 6px 0px !important;
+    padding: 6px 0px 6px 0px !important;
+    text-align: center;
+    max-width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+}
+
+/* iPad mini in portrait */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.col-md-4.nopadding {
+    display: block !important;
+    margin: 6px 0px 6px 0px !important;
+    padding: 6px 0px 6px 0px !important;
+    text-align: center;
+    max-width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+}
+
+/* Retina iPad in portrait & landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.col-md-4.nopadding {
+    display: block !important;
+    margin: 6px 0px 6px 0px !important;
+    padding: 6px 0px 6px 0px !important;
+    text-align: center;
+    max-width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+}
+
+/* Retina iPad in landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+
+  .hero {
+    margin: 40px 0px 0px 0px;
+  }
+}
+
+/* Retina iPad in portrait */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.col-md-4.nopadding {
+    display: block !important;
+    margin: 6px 0px 6px 0px !important;
+    padding: 6px 0px 6px 0px !important;
+    text-align: center;
+    max-width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+
+  .hero {
+    margin: 40px 0px 0px 0px;
+  }
+}
+
+/* iPad 1 & 2 in portrait & landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.col-md-4.nopadding {
+    display: block !important;
+    margin: 6px 0px 6px 0px !important;
+    padding: 6px 0px 6px 0px !important;
+    text-align: center;
+    max-width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+}
+
+/* iPad 1 & 2 in landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.col-md-4.nopadding {
+    display: block !important;
+    margin: 6px 0px 6px 0px !important;
+    padding: 6px 0px 6px 0px !important;
+    text-align: center;
+    max-width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+
+  .navbar {
+    border-radius: 0px !important;
+  }
+
+  .navbar-nav {
+    float: none !important;
+    margin: 0px auto !important;
+    max-width: 100% !important;
+  }
+
+  .navbar-nav {
+    float: none !important;
+    margin: 0px auto !important;
+    max-width: 100% !important;
+  }
+}
+
+/* iPad 1 & 2 in portrait */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  div.row.contact-details {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.col-md-4.nopadding {
+    display: block !important;
+    margin: 6px 0px 6px 0px !important;
+    padding: 6px 0px 6px 0px !important;
+    text-align: center;
+    max-width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+
+  .navbar {
+    border-radius: 0px !important;
+  }
+
+  .navbar-nav {
+    float: none !important;
+    margin: 0px auto !important;
+    max-width: 100% !important;
+  }
+}
+
+/* xGA iPad */
+
+@media screen and (max-width: 1080px) {
+  div.col-md-4.nopadding {
+    display: block !important;
+    margin: 6px 0px 6px 0px !important;
+    padding: 6px 0px 6px 0px !important;
+    text-align: center;
+    max-width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.nopadding {
+    display: block !important;
+    margin: 6px 0px 6px 0px !important;
+    padding: 6px 0px 6px 0px !important;
+    text-align: center;
+    max-width: 100% !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+
+  .navbar {
+    border-radius: 0px !important;
+  }
+
+  .navbar-nav {
+    float: none !important;
+    margin: 0px auto !important;
+    max-width: 100% !important;
+  }
+
+  .hero {
+    margin: 40px 0px 0px 0px;
+  }
+
+  h1.hero {
+    font-size: 110px !important;
+    line-height: 140px !important;
+  }
+}
+
+/* 1200px (Small Desktop,Netbook) */
+
+@media screen and (min-width: 1000px) and (max-width: 1024px) {
+  div.col-md-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.wp2.item {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+
+  div.col-md-4.nopadding {
+    display: block !important;
+    margin: 6px 0px 6px 0px !important;
+    padding: 6px 0px 6px 0px !important;
+    text-align: center;
+    max-width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.col-md-12 {
+    margin-right: 0px auto !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+
+  .navbar {
+    border-radius: 0px !important;
+  }
+
+  .navbar-nav {
+    float: none !important;
+    margin: 0px auto !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .navbar-expand-lg>.container,
+  .navbar-expand-lg>.container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin: 0px auto !important;
+    max-width: 100% !important;
+  }
+
+  .navbar-nav {
+    float: none !important;
+    margin: 0px auto !important;
+    max-width: 100% !important;
+  }
+
+  .hero {
+    margin: 125px 0px 0px 0px;
+  }
+
+  div.col-md-4.nopadding {
+    display: block !important;
+    margin: 6px 0px 6px 0px !important;
+    padding: 6px 0px 6px 0px !important;
+    text-align: center;
+    max-width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+}
+
+/* Bootstrap 990px Breakpoint to 480px */
+
+@media screen and (min-width: 480px) and (max-width: 992px) {
+  .iphone {
+    display: none;
+  }
+
+  .fluid-white {
+    display: none;
+  }
+
+  .wrapper {
+    background: #f3f5f8;
+    height: 540px;
+  }
+
+  .wp2,
+  .wp4,
+  .wp5,
+  .light-box {
+    margin-bottom: 30px;
+  }
+
+  .container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .navbar-nav {
+    float: none !important;
+    margin: 0px auto !important;
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  div.col-md-12 {
+    margin: 0px auto !important;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .col-md-4 {
+    max-width: 100% !important;
+  }
+
+  div.col-md-4.nopadding {
+    display: block !important;
+    margin: 6px 0px 6px 0px !important;
+    padding: 6px 0px 6px 0px !important;
+    text-align: center;
+    max-width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+
+  .navbar {
+    border-radius: 0px !important;
+  }
+
+  .services {
+    margin: 20px 0px;
+    display: block;
+    max-width: 100%;
+    float: none;
+  }
+
+  .navbar-nav {
+    float: none !important;
+    margin: 0px auto !important;
+    max-width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 50em) {
+  div.col-md-4.nopadding {
+    display: block !important;
+    margin: 6px 0px 6px 0px !important;
+    padding: 6px 0px 6px 0px !important;
+    text-align: center;
+    max-width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .icon-list a {
+    padding: 0.8em 0em;
+    margin: 0 5px;
+    font-size: 1em;
+  }
+
+  .icon-list a span {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    font-weight: 700;
+    padding-top: 0.44em;
+    padding-bottom: 0.88em;
+  }
+
+  .rc-anchor-normal {
+    height: 74px;
+    width: 150px;
+    display: block !important;
+    margin: 0px auto !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  h1.hero {
+    font-size: 110px !important;
+    line-height: 140px !important;
+  }
+
+  .hero {
+    margin: 40px 0px 0px 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  div.col-md-4.nopadding {
+    display: block !important;
+    margin: 6px 0px 6px 0px !important;
+    padding: 6px 0px 6px 0px !important;
+    text-align: center;
+    max-width: 100% !important;
+  }
+
+  .dark-box.box-hover {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container-fluid {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  div.container {
+    max-width: 100% !important;
+    margin-right: 0px auto !important;
+    margin-left: 0px auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .row-offset-0 {
+    margin: 0px auto !important;
+    padding: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .col-md-12 {
+    max-width: 100% !important;
+  }
+
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+
+  .navbar {
+    border-radius: 0px !important;
+  }
+
+  .navbar-nav {
+    float: none !important;
+    margin: 0px auto !important;
+    max-width: 100% !important;
+  }
+
+  .navbar-nav>li {
+    float: none !important;
+  }
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+button {
+  margin: 0px auto;
+}
+
+textarea {
+  height: 200px;
+}

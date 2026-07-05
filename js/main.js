@@ -1,4 +1,4 @@
-$(window).on("load", function() {
+$(window).load(function() {
   $("#preloader").fadeOut("slow", function() {
     $(this).remove();
   });
@@ -8,7 +8,7 @@ $(window).on("load", function() {
 Learn More Page Scroll
 *******************************************************************************************************************************/
 $(function() {
-  $("a.page-scroll").on("click", function(event) {
+  $("a.page-scroll").bind("click", function(event) {
     var $anchor = $(this);
     $("html, body")
       .stop()

@@ -1686,12 +1686,6 @@ ul.slides li {
     visibility: hidden;
 }
 
-.animated {
-    animation-duration: .7s;
-    animation-fill-mode: both;
-    will-change: opacity, transform;
-}
-
 .bounceInLeft,
 .bounceInRight,
 .fadeInUp,
@@ -1703,18 +1697,6 @@ ul.slides li {
     visibility: visible;
 }
 
-.fadeInUp {
-    animation-name: fadeInUp;
-}
-
-.fadeInDown {
-    animation-name: fadeInDown;
-}
-
-.fadeInLeft {
-    animation-name: fadeInLeft;
-}
-
 .delay-05s {
     animation-delay: 0.5s;
     -webkit-animation-delay: 0.5s;
@@ -1723,49 +1705,6 @@ ul.slides li {
 .delay-1s {
     animation-delay: 1s;
     -webkit-animation-delay: 1s;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translate3d(0, 24px, 0);
-    }
-
-    to {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -24px, 0);
-    }
-
-    to {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translate3d(-24px, 0, 0);
-    }
-
-    to {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .animated {
-        animation: none !important;
-        transition: none !important;
-    }
 }
 
 .wp3 {
