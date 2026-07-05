@@ -1,22 +1,34 @@
 $(function() {
+  var $form;
+
   function after_form_submitted(data) {
-    if (data.result == "success") {
+    var $errorMessage = $("#error_message");
+    var $errorDetails = $errorMessage.find(".error-details");
+
+    if (data.result === "success") {
       $("form#reused_form").hide();
       $("#success_message").show();
-      $("#error_message").hide();
+      $errorDetails.empty();
+      $errorMessage.hide();
     } else {
-      $("#error_message").append("<span></span>");
+      var errorFragment = document.createDocumentFragment();
 
-      jQuery.each(data.errors, function(key, val) {
-        $("#error_message ul").append("<p>" + key + ":" + val + "</p>");
+      $.each(data.errors, function(key, val) {
+        var errorItem = document.createElement("p");
+
+        errorItem.appendChild(document.createTextNode(key + ": " + val));
+        errorFragment.appendChild(errorItem);
       });
+
+      $errorDetails.empty().append(errorFragment);
       $("#success_message").hide();
-      $("#error_message").show();
+      $errorMessage.show();
 
       //reverse the response on the button
       $('button[type="button"]', $form).each(function() {
-        $btn = $(this);
-        label = $btn.prop("orig_label");
+        var $btn = $(this);
+        var label = $btn.prop("orig_label");
+
         if (label) {
           $btn.prop("type", "submit");
           $btn.text(label);
@@ -32,7 +44,8 @@ $(function() {
     $form = $(this);
     //show some response on the button
     $('button[type="submit"]', $form).each(function() {
-      $btn = $(this);
+      var $btn = $(this);
+
       $btn.prop("type", "button");
       $btn.prop("orig_label", $btn.text());
       $btn.text("Sending ...");
