@@ -1,7 +1,5 @@
 $(function() {
-  var $form;
-
-  function after_form_submitted(data) {
+  function after_form_submitted($form, data) {
     var $errorMessage = $("#error_message");
     var $errorDetails = $errorMessage.find(".error-details");
 
@@ -41,7 +39,8 @@ $(function() {
   $("#reused_form").submit(function(e) {
     e.preventDefault();
 
-    $form = $(this);
+    var $form = $(this);
+
     //show some response on the button
     $('button[type="submit"]', $form).each(function() {
       var $btn = $(this);
@@ -55,7 +54,9 @@ $(function() {
       type: "POST",
       url: "handler.php",
       data: $form.serialize(),
-      success: after_form_submitted,
+      success: function(data) {
+        after_form_submitted($form, data);
+      },
       dataType: "json"
     });
   });
