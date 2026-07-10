@@ -1707,6 +1707,54 @@ ul.slides li {
     -webkit-animation-delay: 1s;
 }
 
+.delay-5s {
+    animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 24px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -24px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-24px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animated {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
 .wp3 {
     background: url("../img/iphone-bg.png") no-repeat center center;
     background-position: 200px 10px;
