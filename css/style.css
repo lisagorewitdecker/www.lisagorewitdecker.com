@@ -77,10 +77,12 @@ h6::after {
     margin-top: 20px;
 }
 
+h3.reviews,
 h6.reviews {
     text-align: left;
 }
 
+h3.reviews::after,
 h6.reviews::after {
     content: " ";
     border: solid 1px #cccccc;
