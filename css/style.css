@@ -1686,12 +1686,6 @@ ul.slides li {
     visibility: hidden;
 }
 
-.animated {
-    animation-duration: .7s;
-    animation-fill-mode: both;
-    will-change: opacity, transform;
-}
-
 .bounceInLeft,
 .bounceInRight,
 .fadeInUp,
@@ -1701,18 +1695,6 @@ ul.slides li {
 .fadeInLeft,
 .fadeInRight {
     visibility: visible;
-}
-
-.fadeInUp {
-    animation-name: fadeInUp;
-}
-
-.fadeInDown {
-    animation-name: fadeInDown;
-}
-
-.fadeInLeft {
-    animation-name: fadeInLeft;
 }
 
 .delay-05s {
