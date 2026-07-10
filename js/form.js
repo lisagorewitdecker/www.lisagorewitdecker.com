@@ -5,10 +5,16 @@ $(function() {
       $("#success_message").show();
       $("#error_message").hide();
     } else {
-      $("#error_message").append("<span></span>");
+      var $errorList = $("#error_message ul");
+      if (!$errorList.length) {
+        $errorList = $("<ul></ul>").appendTo("#error_message");
+      }
+      $errorList.empty();
 
       jQuery.each(data.errors, function(key, val) {
-        $("#error_message ul").append("<p>" + key + ":" + val + "</p>");
+        $("<li></li>")
+          .text(key + ":" + val)
+          .appendTo($errorList);
       });
       $("#success_message").hide();
       $("#error_message").show();
