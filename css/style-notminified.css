@@ -4942,6 +4942,7 @@ textarea {
 
 .skip-link:focus {
   top: 0;
+  /* Intentional override: The skip-link becomes fully visible at top:0 on focus, which serves as its primary visual focus indicator. */
   outline: none !important;
 }
 
